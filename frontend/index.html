@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD LIBROS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>CRUD LIBROS</h1>
+
+    <form id="libroForm">
+        <input id="libroId" type="hidden">
+        <input type="text" id="libroTitle" placeholder="Titulo" required>
+        <input type="text" id="libroAutor" placeholder="Autor" required>
+
+        <button type="button" id="saveBtn">Guardar</button>
+        <button type="button" id="updateBtn" style="display: none;">Actualizar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+
+                <th>acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="librosTableBody"></tbody>
+        <script src="script.js"></script>
+    </table>
+
+</body>
+</html>
